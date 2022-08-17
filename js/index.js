@@ -32,9 +32,3 @@ $(function(){
         instance.scroll([ 0, $(`._news`)[0].offsetTop/1.2 - $("header").height() ], 300);
     });
 });
-window.onload=()=>{
-    var iPhone = ( navigator.userAgent.match(/(iPhone|iPod)/i) ? true : false );
-    if (iPhone) {
-        window.scrollTo(0, 1);
-    }
-};
