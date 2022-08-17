@@ -1,5 +1,4 @@
 $(function(){
-    window.scrollTo(0,1);
     $('.right_menu_btn,.menu_bg,.right_menu a').on('click',function(){
         $('.right_menu,.menu_bg,.right_menu_btn').toggleClass('open');
     });
@@ -8,6 +7,7 @@ $(function(){
         callbacks :{
             onScroll : (e)=> {
                 e.target.scrollTop? $('header,.go_top').addClass('onScroll') :$('header,.go_top').removeClass('onScroll');
+                window.scrollTo(0,1);
             },
             onScrollStop : (e)=> {
                 document.cookie = "scrollTop=" + e.target.scrollTop;
