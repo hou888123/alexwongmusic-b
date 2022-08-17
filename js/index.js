@@ -2,7 +2,7 @@ $(function(){
     $('.right_menu_btn,.menu_bg,.right_menu a').on('click',function(){
         $('.right_menu,.menu_bg,.right_menu_btn').toggleClass('open');
     });
-    /*$("body").overlayScrollbars({
+    $(".content").overlayScrollbars({
         className:'os-theme-dark',
         callbacks :{
             onScroll : (e)=> {
@@ -18,17 +18,17 @@ $(function(){
                 }  
             }
         }
-    });*/
+    });
     $('.go_top').on('click',function(){
-        var instance = OverlayScrollbars(document.body); 
+        var instance = OverlayScrollbars($(".content")[0]); 
         instance.scroll([ 0, 0], 300);
     });
     $('.go').on('click',function(){
-        var instance = OverlayScrollbars(document.body); 
+        var instance = OverlayScrollbars($(".content")[0]); 
         instance.scroll([ 0, $(`._${$(this).attr('class').split("_")[1]}`)[0].offsetTop - $("header").height() ], 300);
     });
     $('.scroll_down').on('click',function(){
-        var instance = OverlayScrollbars(document.body); 
+        var instance = OverlayScrollbars($(".content")[0]); 
         instance.scroll([ 0, $(`._news`)[0].offsetTop/1.2 - $("header").height() ], 300);
     });
 });
