@@ -1,4 +1,8 @@
 $(function(){
+    var iPhone = ( navigator.userAgent.match(/(iPhone|iPod)/i) ? true : false );
+    if (iPhone) {
+        window.scrollTo(0, 1);
+    }
     $('.right_menu_btn,.menu_bg,.right_menu a').on('click',function(){
         $('.right_menu,.menu_bg,.right_menu_btn').toggleClass('open');
     });
