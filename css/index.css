@@ -15,15 +15,6 @@ body,html{
     background: #1e1e1e;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    width: 100vw;
-    height: 100vh;
-}
-.content{
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
 }
 header{
     position: fixed;
@@ -228,6 +219,7 @@ h1:before{
 }
 .s4{
     position: relative;
+    z-index: 0;
 }
 .s4:after{
     content: '';
@@ -277,6 +269,7 @@ h1:before{
 }
 .s5{
     position: relative;
+    z-index: 0;
 }
 .s5:after{
     content: '';
@@ -560,6 +553,9 @@ footer{
     }
 }
 @media only screen and (max-width: 768px) {
+    .s5:after{
+        background: url('../img/valentino-funghi-146040.jpg')no-repeat center center / cover;
+    }
     .news_area dd h2{
         font-size: 18px;
     }
