@@ -157,7 +157,7 @@ h1:before{
     left: 0;
     width: 100%;
     text-shadow: 1px 1px rgb(161 121 47 / 80%), 2px 2px rgb(180 142 67 / 80%);
-    opacity: .4;
+    opacity: .2;
 }
 .news_area{
     width: 90%;
