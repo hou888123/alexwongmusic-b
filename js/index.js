@@ -1,8 +1,4 @@
 $(function(){
-    var iPhone = ( navigator.userAgent.match(/(iPhone|iPod)/i) ? true : false );
-    if (iPhone) {
-        window.scrollTo(0, 1);
-    }
     $('.right_menu_btn,.menu_bg,.right_menu a').on('click',function(){
         $('.right_menu,.menu_bg,.right_menu_btn').toggleClass('open');
     });
@@ -36,3 +32,9 @@ $(function(){
         instance.scroll([ 0, $(`._news`)[0].offsetTop/1.2 - $("header").height() ], 300);
     });
 });
+window.onload=()=>{
+    var iPhone = ( navigator.userAgent.match(/(iPhone|iPod)/i) ? true : false );
+    if (iPhone) {
+        window.scrollTo(0, 1);
+    }
+};
