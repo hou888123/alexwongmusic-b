@@ -7,7 +7,6 @@ $(function(){
         callbacks :{
             onScroll : (e)=> {
                 e.target.scrollTop? $('header,.go_top').addClass('onScroll') :$('header,.go_top').removeClass('onScroll');
-                window.scrollTo(0, document.querySelector(".content").scrollHeight);
             },
             onScrollStop : (e)=> {
                 document.cookie = "scrollTop=" + e.target.scrollTop;
@@ -32,4 +31,7 @@ $(function(){
         var instance = OverlayScrollbars($(".content")[0]); 
         instance.scroll([ 0, $(`._news`)[0].offsetTop/1.2 - $("header").height() ], 300);
     });
+});
+$(window).load(function() {
+     window.scrollTo(0, document.querySelector(".content").scrollHeight);
 });
