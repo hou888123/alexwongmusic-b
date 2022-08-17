@@ -239,6 +239,7 @@ h1:before{
     left: 0;
     top:0;
     backdrop-filter: brightness(40%);
+    -webkit-backdrop-filter: brightness(10px);
     z-index: -1;
 }
 .video-container {
