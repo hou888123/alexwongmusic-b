@@ -2,7 +2,7 @@ $(function(){
     $('.right_menu_btn,.menu_bg,.right_menu a').on('click',function(){
         $('.right_menu,.menu_bg,.right_menu_btn').toggleClass('open');
     });
-    $("body").overlayScrollbars({
+    /*$("body").overlayScrollbars({
         className:'os-theme-dark',
         callbacks :{
             onScroll : (e)=> {
@@ -18,7 +18,7 @@ $(function(){
                 }  
             }
         }
-    });
+    });*/
     $('.go_top').on('click',function(){
         var instance = OverlayScrollbars(document.body); 
         instance.scroll([ 0, 0], 300);
