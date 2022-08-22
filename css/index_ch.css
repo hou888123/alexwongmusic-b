@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Aboreto&family=Alumni+Sans+Pinstripe:wght@500&family=Artifika&family=Figtree:wght@500&family=Raleway:wght@700&family=Roboto:wght@700&family=Slabo+27px&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Ma+Shan+Zheng&family=Oswald:wght@700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -14,7 +14,7 @@ ol,ul,li{
 body,html{
     background: #1e1e1e;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 header{
     position: fixed;
@@ -27,12 +27,11 @@ header{
     z-index: 1;
     color: #dedede;
     transition: .2s;
-    height: 60px;
+    height:70px;
 }
 header p{
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     transition: .2s;
     cursor: pointer;
 }
@@ -45,8 +44,9 @@ header a{
     padding: 14px 14px 10px;
     margin:0 10px;
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
     transition: .2s;
+    font-weight: 600;
     text-shadow: 0.05em 0.05em 0.1em #333;
 }
 .lang {
@@ -126,14 +126,13 @@ section{
     width: 400px;
 }
 .s1 dt{
-    font-size: 55px;
+    font-size: 88px;
     width: 100%;
-    font-family: 'Artifika', serif;
 }
 .s1 dd{
     padding: 10px 20px;
-    font-size: 20px;
-    font-family: 'Aboreto', cursive;
+    font-size: 22px;
+    font-family: DFKai-sb;
     position:relative;
 }
 .s1 dd:not(:last-of-type):after{
@@ -174,7 +173,6 @@ h1{
     width: fit-content;
     max-width: 90%;
     text-align: center;
-    font-family: 'Artifika', serif;
     font-size: 40px;
     border-bottom: #b39c33 2px solid;
     background: linear-gradient(to right, #b39c33, #ddb64b,#ecc968,#b39c33);
@@ -217,15 +215,13 @@ h1:before{
 .news_area dd{
     width: 96%;
     line-height: 1.6em;
-    letter-spacing: .1em;
-    font-family: 'Slabo 27px', serif;
     font-size: 18px;
     color: #dedede;
     margin: 0 auto;
     text-align: center;
 }
 .news_area dd h2{
-    font-size: 20px;
+    font-size: 22px;
 }
 .s3{
     background:#eee;
@@ -243,8 +239,6 @@ h1:before{
 .s3 dd{
     color: #4d4d4d;
     line-height: 1.6em;
-    letter-spacing: .1em;
-    font-family: 'Slabo 27px', serif;
     font-size: 18px;
 }
 .s3 p:not(:last-of-type){
@@ -404,7 +398,7 @@ footer{
     position: relative;
 }
 .silver_mask:before{
-    content: 'COMPOSER';
+    content: '作曲家';
     position:absolute;
     top:0;
     left: 0;
@@ -462,15 +456,14 @@ footer{
     margin:20px auto 16px;
 }
 .btn_area button{
-    padding: 20px 40px;
+    padding: 18px 40px;
     border: 2px solid rgb(196, 196, 196);
     border-radius: 3px;
     color: #eee;
     text-decoration: none;
     cursor: pointer;
     background: none;
-    font-size: 16px;
-    font-family: 'Aboreto', cursive;
+    font-size: 20px;
     transition: .2s;
     font-weight: bold;
 }
@@ -501,29 +494,28 @@ footer{
     background: url('../img/GDOST4.jpg')no-repeat center center / cover;
 }
 @media only screen and (max-width: 1024px) {
-    
     header{
         padding: 0 20px;
     }
     header p{
-        font-size: 26px;
+        font-size: 32px;
     }
     header a{
         padding: 8px 6px 6px;
-        font-size: 16px;
+        font-size: 20px;
     }
     header a:after{
         height: 2px;
     }
     .s1 {
-        padding: 260px 0 0 40px;
+        padding: 230px 0 0 40px;
     }
     .s1 dt{
-        font-size: 42px;
+        font-size: 70px;
     }
     .s1 dd{
         padding: 6px 12px;
-        font-size: 17px;
+        font-size: 20px;
     }
     .s1 dd:not(:last-of-type):after{
         top:6px;
@@ -652,9 +644,9 @@ footer{
         display: block;
         position: fixed;
         right: -180px;
-        top:60px;
+        top:70px;
         width: 180px;
-        height: calc(100vh - 60px);
+        height: calc(100vh - 70px);
         background: #1e1e1e;
         z-index: 2;
         transition: .2s;
@@ -695,14 +687,14 @@ footer{
         background: url(../img/img2.jpg)no-repeat top center / auto 100%;
     }
     header p{
-        font-size: 22px;
+        font-size: 30px;
     }
     .s1 dt {
-        font-size: 36px;
+        font-size: 60px;
     }
     .s1 dd {
         padding: 4px 10px;
-        font-size: 15px;
+        font-size: 18px;
     }
     h1 {
         font-size: 32px;

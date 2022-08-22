@@ -5,7 +5,7 @@ $(function(){
     $(window).scroll(function(){
         $(this).scrollTop()?$('header,.go_top').addClass('onScroll') :$('header,.go_top').removeClass('onScroll');
     });
-    $('.go_top').on('click',function(){
+    $('.go_top,header p').on('click',function(){
         $('html, body').animate({scrollTop:0}, 300);
     });
     $('.go').on('click',function(){
@@ -17,6 +17,7 @@ $(function(){
     if (document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null) {  
         var arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/); //cookies中不為空，則讀取滾動條位置  
         $(window).scrollTop(parseInt(arr[1]));
+        $('header,.go_top').addClass('onScroll')
     }  
 });
 
