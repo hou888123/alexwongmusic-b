@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Ma+Shan+Zheng&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexkai.css');
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexyen.css');
 
 *{
     box-sizing: border-box;
@@ -14,7 +16,7 @@ ol,ul,li{
 body,html{
     background: #1e1e1e;
     color: #fff;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'cwTeXYen', sans-serif;
 }
 header{
     position: fixed;
@@ -32,8 +34,10 @@ header{
 header p{
     text-align: center;
     font-size: 40px;
+    font-weight: 700;
     transition: .2s;
     cursor: pointer;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 header nav{
     display: flex;
@@ -44,7 +48,7 @@ header a{
     padding: 14px 14px 10px;
     margin:0 10px;
     position: relative;
-    font-size: 20px;
+    font-size: 24px;
     transition: .2s;
     font-weight: 600;
     text-shadow: 0.05em 0.05em 0.1em #333;
@@ -54,20 +58,22 @@ header a{
     color: #dedede;
     border: none;
     outline:none;
-    font-size: 20px;
-    font-family: 'Roboto','Noto Sans TC', sans-serif;
+    font-size: 24px;
+    font-family: 'Roboto','cwTeXYen', sans-serif;
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
     cursor: pointer;
     padding: 3px 24px 0;
+    font-weight: 700;
 }
 .lang option{
     outline:none;
     background: rgba(0,0,0,0.8);
     box-shadow: 0px 1px 4px 1px rgb(32 32 32 / 70%);
-    font-family:'Roboto', 'Noto Sans TC', sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto','cwTeXYen', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 .lang_area{
     display: flex;
@@ -126,13 +132,13 @@ section{
     width: 400px;
 }
 .s1 dt{
-    font-size: 88px;
+    font-size: 90px;
     width: 100%;
 }
 .s1 dd{
     padding: 10px 20px;
     font-size: 22px;
-    font-family: DFKai-sb;
+    font-family: 'cwTeXKai', serif;
     position:relative;
 }
 .s1 dd:not(:last-of-type):after{
@@ -173,7 +179,7 @@ h1{
     width: fit-content;
     max-width: 90%;
     text-align: center;
-    font-size: 40px;
+    font-size: 42px;
     border-bottom: #b39c33 2px solid;
     background: linear-gradient(to right, #b39c33, #ddb64b,#ecc968,#b39c33);
     background-clip: text;
@@ -215,13 +221,13 @@ h1:before{
 .news_area dd{
     width: 96%;
     line-height: 1.6em;
-    font-size: 18px;
+    font-size: 20px;
     color: #dedede;
     margin: 0 auto;
     text-align: center;
 }
 .news_area dd h2{
-    font-size: 22px;
+    font-size: 24px;
 }
 .s3{
     background:#eee;
@@ -239,7 +245,7 @@ h1:before{
 .s3 dd{
     color: #4d4d4d;
     line-height: 1.6em;
-    font-size: 18px;
+    font-size: 20px;
 }
 .s3 p:not(:last-of-type){
     margin-bottom:20px;
@@ -569,7 +575,7 @@ footer{
         padding:40px 10px;
     }
     .contact dt, .contact dd{
-        font-size: 18px;
+        font-size: 20px;
     }
     .share_icon a{
         height: 36px;
@@ -654,13 +660,17 @@ footer{
     .right_menu.open{
         right:0;
     }
+    .right_menu .lang{
+        font-size: 20px;
+    }
     .right_menu a{
         display: block;
-        font-size: 16px;
+        font-size: 20px;
         color: #dedede;
         text-decoration: none;
         padding: 14px 14px 10px;
-        margin: 0 10px
+        margin: 0 10px;
+        font-weight: 600;
     }
     .menu_bg{
         position: fixed;
@@ -690,7 +700,7 @@ footer{
         font-size: 30px;
     }
     .s1 dt {
-        font-size: 60px;
+        font-size: 65px;
     }
     .s1 dd {
         padding: 4px 10px;
@@ -708,7 +718,7 @@ footer{
         width: 100%;
     }
     .news_area dd,.s3 dd{
-        font-size: 16px;
+        font-size: 18px;
     }
     .s3 dt{
         width:100%;
@@ -718,7 +728,7 @@ footer{
         padding-bottom: 26px;
     }
     .contact dt, .contact dd{
-        font-size: 16px;
+        font-size: 18px;
     }
     .video {
         padding-bottom: 10px;
@@ -734,7 +744,7 @@ footer{
     }
     .btn_area button{
         padding: 20px 30px;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -765,9 +775,9 @@ footer{
     }
     .btn_area button{
         padding: 20px 26px;
-        font-size: 14px;
+        font-size: 16px;
     }
     .news_area dd h2{
-        font-size: 16px;
+        font-size: 20px;
     }
 }
